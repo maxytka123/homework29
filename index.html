@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <title>Позиционирование и нормализация стилей</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        header {
+            margin-top: 30px;
+            max-width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #a02222;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        section {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            margin-right: 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #d32020;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cat-info {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #d32020;
+            z-index: 9999;
+        }
+        .main-button{
+            width: 300px;
+            height: 100px;
+            padding-bottom: 100px;
+
+
+        }
+        .button{
+            border: #a02222 solid 2px;
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            left: 25%;
+        }
+        .footer{
+            position: fixed;
+            z-index: 9999;
+        }
+        .aside-info{
+        top: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Шаблон страницы</h1>
+    </header>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="main-contentent-cat">
+            <h2 class="cat-info">Кот Максвелл</h2>
+            <div class="tenor-gif-embed" data-postid="6886024936073981176" data-share-method="host"
+                data-aspect-ratio="1" data-width="100%"><a
+                    href="https://tenor.com/view/blu-zushi-cat-maxwell-maxwell-the-cat-black-and-white-cat-gif-6886024936073981176">Blu
+                    Zushi Cat Sticker</a>from <a href="https://tenor.com/search/blu+zushi-stickers">Blu Zushi
+                    Stickers</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <div class="main-button"><button class="button">Купить</button></div>
+        </section>
+
+
+        <aside class="aside-info">
+            <h1 class="cat-info">Дополнительная информация</h1>
+            <br>
+            <p>Maxwell the Cat, настоящее имя ― Джесс, англ. Jess ― интернет-мем с домашней
+                кошкой по кличке Джесс, ставшей популярной в Интернете после того, как её хозяин под ником Voidhawk42
+                выложил фотографию Джесс на сайте Imgur в 2017 году.
+            </p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p> Подвал страницы</p>
+    </footer>
+
+</body>
+
+</html>
